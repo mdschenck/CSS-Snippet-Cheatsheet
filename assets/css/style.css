@@ -64,8 +64,6 @@ h6 {
 
 p {
   margin-bottom: 3rem;
-  text-align: center;
-  width: 75%;
   color: white;
 }
 
@@ -121,6 +119,11 @@ code {
   background-color: var(--purple);
   width: 100%;
   border-radius: 5px;
+}
+
+.code-block pre:active {
+    user-select: all;
+  }
 }
 
 footer {
