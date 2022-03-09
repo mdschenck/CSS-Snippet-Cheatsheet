@@ -3,11 +3,18 @@
   --purple: rgb(148, 13, 141);
 }
 
+* {
+  background-color: var(--dark);
+  color: var(--purple);
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Courier New', Courier, monospace;
+  }
+}
 main {
   display: flex;
   flex-wrap: wrap;
-  background-color: var(--dark);
-  color: var(--purple);
+
 }
 
 .card {
@@ -37,6 +44,7 @@ main {
 }
 
 .card header {
+  border-color: var(--purple);
   position: relative;
   margin-top: -20px;
 }
@@ -54,13 +62,16 @@ main {
   width: 100%;
 }
 
+.cardbody {
+  color: white;
+  background-color: var(--purple);
+  width: 200px;
+  border-radius: 5px;
+}
+
 @media screen and (max-width: 768px) {
   main,
   nav {
     flex-direction: column;
   }
 
-h1, h2, h3, h4, h5, h6 {
-  font-size: 100%;
-  font-family: 'Courier New', Courier, monospace;
-}
