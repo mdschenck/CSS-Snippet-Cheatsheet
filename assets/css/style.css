@@ -5,35 +5,93 @@
 
 * {
   background-color: var(--dark);
-  color: var(--purple);
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Courier New', Courier, monospace;
-  }
+  font-family: Arial, Helvetica, sans-serif;
 }
+
+html {
+  font-size: 62.5%;
+}
+
+header {
+  text-align: center;
+}
+
+main {
+  width: 96%;
+  margin: 2rem auto;
+}
+
+footer {
+  margin: 1.5rem;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.625rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 4rem;
+  color: var(--purple);
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  margin-bottom: 3rem;
+  text-align: center;
+  width: 75%;
+  color: white;
+}
+
 main {
   display: flex;
   flex-wrap: wrap;
+  color: var(--purple);
+}
 
+code {
+  font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console",
+    "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono",
+    "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier,
+    monospace;
 }
 
 .card {
-  border-style: solid;
+  border-style: dashed;
+  border-color: white;
   border-width: 1px;
-  border-radius: var(--bradius);
   padding: 10px;
   width: 250px;
   flex: 0 0 250px;
-  margin: 20px;
+  margin: 10px;
+  margin-bottom: 35px;
   display: inline;
-  /* justify-content: left; */
-}
-
-.card header {
-  border-radius: 30px;
-  padding: 20px;
-  border: dotted color:#aaaaaa;
-
 }
 
 .card {
@@ -43,35 +101,34 @@ main {
   );
 }
 
-.card header {
-  border-color: var(--purple);
+.card .card-header {
   position: relative;
-  margin-top: -20px;
+  margin: -4rem 0 1.5rem 0;
+  padding: 0.5rem 1rem;
+  background-color: var(--dark);
+  color: var(--purple);
+  border: 2px solid white;
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
 }
-
-.card > p {
-  text-align: center;
-
-  .card;
-}
-
-.card-column:last-child 
-
 
 .card > img {
   width: 100%;
 }
 
-.cardbody {
+.code-block {
   color: white;
   background-color: var(--purple);
-  width: 200px;
+  width: 100%;
   border-radius: 5px;
 }
 
+footer {
+  text-align: center;
+}
+
 @media screen and (max-width: 768px) {
-  main,
-  nav {
+  main {
     flex-direction: column;
   }
-
+}
